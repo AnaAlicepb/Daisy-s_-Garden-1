@@ -6,7 +6,7 @@
     <meta name="description" content="Daisy Garden é especializada na venda de flores e plantas, oferecendo uma plataforma online para uma experiência de compra intuitiva e segura.">
     <meta name="keywords" content="flores, plantas, e-commerce, Daisy Garden, compra online">
     <meta name="author" content="Ana Alice Rodrigues">
-    <title>Daisy´s Garden</title>
+    
 </head>
 <body>
 
