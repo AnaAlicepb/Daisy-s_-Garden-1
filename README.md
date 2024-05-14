@@ -6,7 +6,7 @@
     <meta name="description" content="Daisy Garden é especializada na venda de flores e plantas, oferecendo uma plataforma online para uma experiência de compra intuitiva e segura.">
     <meta name="keywords" content="flores, plantas, e-commerce, Daisy Garden, compra online">
     <meta name="author" content="Ana Alice Rodrigues">
-    
+
 </head>
 <body>
 
@@ -91,7 +91,7 @@
     <h2>Contato</h2>
     <ul>
         <li><a href="https://linktr.ee/anaeanali5" target="_blank"><img src="https://img.shields.io/badge/Ana_Alice_Rodrigues-blue?style=for-the-badge" alt="Perfil de Ana Alice Rodrigues"></a></li>
-        <li><a href="" target="_blank"><img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Hospedado na Vercel"> clique para acessar o projeto</a></li>
+        
     </ul>
 </section>
 
