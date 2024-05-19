@@ -13,7 +13,7 @@ if (isset($_SESSION['carrinho'])) {
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,12 +21,13 @@ if (isset($_SESSION['carrinho'])) {
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
 
   <title>Inicio</title>
 </head>
 <body>
-  <nav class="navbar" style="background-color: #224840;">
-    <div class="container">
+  <nav class="navbar navbar-expand-lg " style="background-color: #224840;">
+    <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img src="./img/logo.png" alt="logo" width="100" height="auto">
       </a>
@@ -102,13 +103,13 @@ if (isset($_SESSION['carrinho'])) {
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="10000">
-        <img src="./img/loja.jpg" class="d-block w-100" alt="loja">
+        <img src="./img/carossel01.jpg" class="d-block w-100" alt="01">
       </div>
       <div class="carousel-item" data-bs-interval="2000">
-        <img src="./img/loja.jpg" class="d-block w-100" alt="loja">
+        <img src="./img/carosel02.jpg" class="d-block w-100" alt="02">
       </div>
       <div class="carousel-item">
-        <img src="./img/loja.jpg" class="d-block w-100" alt="loja">
+        <img src="./img/carossel03.jpg" class="d-block w-100" alt="03">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">

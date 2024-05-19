@@ -98,40 +98,47 @@
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <div class="col-md-6">
-                            <button type="submit" class="btn btn-primary">Finalizar Pedido</button>
-                        </div>
-                    </div>
-                </form>
+    <div class="col-md-6">
+        <button type="submit" class="btn btn-primary" id="finalizeOrder">Finalizar Pedido</button>
+    </div>
+</div>
+</form>
+</div>
+</div>
+</div>
+<!-- Modal de Sucesso -->
+<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="successModalLabel">Pagamento Confirmado</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                O seu pagamento foi realizado com sucesso! Obrigado por sua compra.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
             </div>
         </div>
     </div>
-    <!-- Modal de Sucesso -->
-    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="successModalLabel">Pagamento Confirmado</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    O seu pagamento foi realizado com sucesso! Obrigado por sua compra.
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Bootstrap JS v5 -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        const form = document.getElementById('paymentForm');
-        form.addEventListener('submit', function(event) {
-            event.preventDefault();
-            const modal = new bootstrap.Modal(document.getElementById('successModal'));
-            modal.show();
-        });
-    </script>
+</div>
+<!-- Bootstrap JS v5 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+const form = document.getElementById('paymentForm');
+form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    const modal = new bootstrap.Modal(document.getElementById('successModal'));
+    modal.show();
+
+    // Define um temporizador para redirecionar após 3 segundos
+    setTimeout(function() {
+        window.location.href = 'finalize_compra.php'; // Redireciona para o script de finalização da compra
+    }, 3000); // 3000 milissegundos = 3 segundos
+});
+</script>
+
+
 </body>
 </html>
