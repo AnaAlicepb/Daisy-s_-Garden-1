@@ -60,8 +60,8 @@
                                 <input type="text" id="cidade" class="form-control" name="cidade" required />
                             </div>
                             <div class="mb-3">
-                                <label for="estado" the form-label"><strong>Estado:</strong></label>
-                                <input type="text" id="estado" class="form-control" name="estado" required />
+                            <label for="estado" class="form-label"><strong>Estado:</strong></label>
+                            <input type="text" id="estado" class="form-control" name="estado" required />
                             </div>
                             <div class="mb-3">
                                 <label for="cep" class="form-label"><strong>CEP:</strong></label>
@@ -86,8 +86,13 @@
     <script>
         // Aplicando máscaras
         document.addEventListener("DOMContentLoaded", function() {
+        console.log(document.getElementById("cep")); // Deve mostrar o elemento no console
+        console.log(document.getElementById("numero_de_telefone")); // Deve mostrar o elemento no console
+
         Inputmask("99999-999").mask(document.getElementById("cep"));
-        Inputmask("(99) 9999-9999").mask(document.getElementById("numero_de_telefone"));});
+        Inputmask("(99) 9999-9999").mask(document.getElementById("numero_de_telefone"));
+});
+
     </script>
 </body>
 </html>
